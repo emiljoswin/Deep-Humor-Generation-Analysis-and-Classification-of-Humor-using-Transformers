@@ -43,3 +43,7 @@ python run_generation.py \
 ```
 
 An improved version is in the jupyter notebook along with the rest of the code for generation, analysis and classification.
+
+### BERT
+
+Jupyter notebook is run on Google Collab, any extra package requried required is being included in the notebook itself.
