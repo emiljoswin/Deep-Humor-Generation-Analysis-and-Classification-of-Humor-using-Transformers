@@ -1,7 +1,5 @@
 # Deep-Humor
 
-URL: https://github.com/adich23/Deep-Humor
-
 Software Requirements:
 
 1. Python: 3.7
