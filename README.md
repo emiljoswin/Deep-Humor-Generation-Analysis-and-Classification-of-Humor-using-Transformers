@@ -1,6 +1,23 @@
 # Deep-Humor
 
-Software Requirements:
+
+Humor generation and classification is one the
+hardest problem in the area of computational
+Natural Language Understanding. Even humans
+fail at being funny and recognizing humor.
+In this project, we attempt to create a
+joke generator using a large pre-trained language
+model (GPT2). Further, we create jokes
+classifier by fine-tuning pre-trained (BERT) to
+classify the generated jokes and attempt to
+understand what distinguish joke sentence(s)
+from non joke sentence(s). Qualitative analysis
+reveals that the classifier model has specific
+internal attention patterns while classifying
+joke sentences which is absent when classifying
+normal sentences.
+
+#### Software Requirements:
 
 1. Python: 3.7
 2. pytorch: 1.2.0
