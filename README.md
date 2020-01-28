@@ -17,7 +17,26 @@ internal attention patterns while classifying
 joke sentences which is absent when classifying
 normal sentences.
 
-#### Software Requirements:
+### Model Architecture
+
+![Model Architecture](https://github.com/adich23/Deep-Humor/blob/master/images/model.png)
+
+### Attention analysis
+
+For Non-joke sentence
+![Non Joke Attention](https://github.com/adich23/Deep-Humor/blob/master/images/nojoke_attention.png)
+
+
+For Joke sentences, there's a visible 'X' pattern which validates the setup-punchline structure.
+
+![Joke Attention](https://github.com/adich23/Deep-Humor/blob/master/images/joke_attention.png)
+
+Detailed view of the Joke attention pattern - 
+
+![detailed view](https://github.com/adich23/Deep-Humor/blob/master/images/Attentiion-explained.png)
+
+
+### Software Requirements:
 
 1. Python: 3.7
 2. pytorch: 1.2.0
@@ -31,7 +50,7 @@ Pretrained models are from https://github.com/huggingface/transformers
 GTP2/fine_tuning.py is mostly the huggingface's run_lm_finetuning.py except for the `Dataset` Class.
 
 
-#### Run-GPT2-finetuning
+### Run-GPT2-finetuning
 
 ```
 python fine_tuning.py \
@@ -45,7 +64,7 @@ python fine_tuning.py \
 	--num_train_epochs 10
 ```
 
-#### GPT2-get a sample output
+### GPT2-get a sample output
 
 ```
 python run_generation.py \
